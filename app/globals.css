@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* third-party libraries CSS */
+
+.testimonial-01 .swiper-pagination-bullet {
+  @apply h-2.5 w-2.5 bg-stroke opacity-100;
+}
+.testimonial-01 .swiper-pagination-bullet-active {
+  @apply w-5 rounded-full bg-primary;
+}
+
+.testimonial-01 .swiper-pagination {
+  @apply relative pt-[50px];
+}
+
+#supportCheckbox:checked ~ div span {
+  @apply opacity-100;
+}
+
+@layer base {
+  body {
+    @apply relative z-1 font-inter text-regular font-normal text-waterloo dark:text-manatee;
+  }
+}
+
+@layer components {
+  .dropdown {
+    @apply -left-7.5 mt-2 hidden min-w-max flex-col gap-4 rounded-md border border-stroke bg-white px-8 py-5 shadow-solid-13 duration-300 ease-in dark:border-strokedark dark:bg-black xl:invisible xl:absolute
+    xl:mt-0 xl:flex xl:w-[250px] xl:translate-y-10 xl:opacity-0
+    xl:before:absolute xl:before:-top-1.5 xl:before:left-10 xl:before:h-3 xl:before:w-3 xl:before:rotate-45 xl:before:border-l xl:before:border-t xl:before:border-stroke xl:before:bg-white xl:group-hover:visible xl:group-hover:translate-y-6.5 
+    xl:group-hover:opacity-100 xl:dark:before:border-strokedark xl:dark:before:bg-black;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navbar {
+    @apply max-h-[400px] overflow-y-scroll;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .img-white {
+    filter: invert(0%) sepia(96%) saturate(15%) hue-rotate(249deg)
+      brightness(100%) contrast(105%);
+  }
+}
+
+.blog-details-docs {
+  @apply rounded-lg border border-white p-7.5 shadow-solid-3 transition-all dark:border-strokedark  dark:bg-blacksection xl:p-12.5;
+}
+
+.blog-details p {
+  @apply mb-8 text-base leading-relaxed text-titlebgdark dark:text-waterloo;
+}
+
+.blog-details p strong {
+  @apply text-primary dark:text-waterloo;
+}
+.blog-details h3 strong,
+.blog-details h3 {
+  @apply mb-10 text-xl !font-semibold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight;
+}
+
+.blog-details h4 strong,
+.blog-details h4 {
+  @apply text-xl !font-semibold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight;
+}
+
+.blog-details h5 strong,
+.blog-details h5 {
+  @apply mb-3 text-lg !font-semibold leading-tight text-black dark:text-white sm:text-xl;
+}
+
+.blog-details h1 {
+  @apply mb-4 text-3xl !font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px] lg:text-4xl xl:text-[45px];
+}
+.blog-details h2 strong,
+.blog-details h2 {
+  @apply mb-4 text-[26px] !font-bold !leading-tight text-black dark:text-white sm:text-3xl md:text-4xl;
+}
+
+.blog-details ul,
+.blog-details ol {
+  @apply mb-10 list-inside list-disc text-titlebgdark;
+}
+
+.blog-details li,
+.blog-details li {
+  @apply mb-2 text-base text-titlebgdark dark:text-waterloo;
+}
+
+.blog-details blockquote {
+  @apply relative z-10 mb-10 overflow-hidden rounded-sm bg-manatee p-8 text-center text-base font-medium italic text-black dark:bg-titlebgdark md:py-9 lg:px-10;
+}
+
+.blog-details blockquote::after {
+  content: "";
+  @apply absolute bottom-0 right-0 h-20 w-20 bg-[url(/images/blog/quote-shape-2.svg)] bg-contain bg-right-bottom bg-no-repeat;
+}
+
+.blog-details blockquote::before {
+  content: "";
+  @apply absolute left-0 top-0 h-[106px] w-[140px] bg-[url(/images/blog/quote-shape-1.svg)] bg-contain bg-left-top bg-no-repeat dark:bg-[url(/images/blog/quote-shape-1.svg)];
+}
+
+pre {
+  @apply relative mb-2 rounded-lg bg-strokedark px-4 py-2;
+}
+.prism-copy-button {
+  @apply absolute right-2 top-2 h-[26px] rounded bg-white px-4 text-primary;
+}
+
+.active-tab {
+  @apply bg-stroke text-black dark:bg-blackho dark:text-white;
+}
+/* -------------------------------- */
+:root {
+  --primary-color: #131313;
+  --primary-white: #fff;
+  --primary-orange: #ff7526;
+  --primary-orange-1: #e24d14;
+  --primary-orange-hover: #ff9e6b59;
+  --primary-orange-active: #d86b3c;
+  --primary-red: #ff1001;
+  --primary-light-orange: #ff7526;
+  --color-gray-02: #b4b6b8;
+  --color-gray-03: #8b8d90;
+  --color-gray-06: #404041;
+  --border-gray-10: #ececec;
+  --bg-color-light-white: #fff;
+  --bg-color-light-orange: #fff2ea;
+  --bg-color-light-mid-gray: #f6f6f6;
+  --bg-light-gray: #e8e8e8;
+  --content-gray-02: #b4b6b8;
+  --list-placeholder: #1f2937;
+  --gray-01: #767676;
+  --gray-02: #b4b6b8;
+  --gray-03: #8b8d90;
+  --gray-04: #6d6e70;
+  --gray-05: #58595b;
+  --gray-06: #404041;
+  --gray-07: #6d6e70;
+  --gray-08: #8b8d90;
+  --gray-09: #dadada;
+  --gray-10: #ececec;
+  --neutral-600: #525252;
+  --red-800: #b10d03;
+  --light-gray: #e8e8e8;
+  --light-medium-gray: #f6f6f6;
+  --light-golden: #eadab1;
+  --orange-06: #ffd6be;
+  --orange-shades-01: #cc5e1e;
+  --orange-shades-05: #ffc8a8;
+  --orange-shades-07: #ffe3d4;
+  --orange-shades-08: #fff7f2;
+  --success: #19ab4f;
+  --error: #ff1001;
+  --bg-orange: #fdf6f2;
+  --light-trumpet: #d1b06b;
+  --light-platinum: #edf5ff;
+  --light-gold: #fff8eb;
+  --light-success: #edf9f0;
+  --light-danger: #feefef;
+  --toastify-font-family: Be Vietnam Pro;
+  --toastify-color-info: #0148d2;
+  --toastify-color-success: #19ab4f;
+  --toastify-color-warning: #f3a90c;
+  --toastify-color-error: #ff1001;
+  --toastify-text-color-light: #131313;
+  --crusta-600: #ef4507;
+  --chat-icon-bottom: 10px;
+  --tier-new: #e7642c;
+  --tier-silver: #646d80;
+  --tier-gold: #eab445;
+  --tier-platinum: #1f3048;
+  --tier-new-icon: #e7642c;
+  --tier-silver-icon: #526279;
+  --tier-gold-icon: #b37901;
+  --tier-platinum-icon: #1f3048;
+  --tier-gradient-new: linear-gradient(191deg, #ff9d5f 2.54%, #e37f40 47.36%, #d4570a 92.17%);
+  --tier-gradient-silver: linear-gradient(31deg, #526279 17.3%, #7886a3 53.14%, #a7b4cd);
+  --tier-gradient-gold: linear-gradient(31deg, #cd8c03 17.3%, #e4af3f 69.21%, #fec857);
+  --tier-gradient-platinum: linear-gradient(31deg, #1c2532 17.3%, #364d6c 52.65%, #5379ab);
+  --progress-icon: var(--tier-new-icon);
+  --progress-sub-label: var(--orange-shades-05);
+  --progress-bar-bg: #b5583440;
+  --benefit-icon-bg: var(--bg-orange);
+  --benefit-icon-color: var(--primary-orange)
+}
