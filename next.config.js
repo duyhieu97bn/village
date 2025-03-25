@@ -13,6 +13,10 @@ const nextConfig = {
       },
     ],
   },
+  sassOptions: {
+    additionalData: `$var: red;`,
+    implementation: 'sass-embedded',
+  },
 };
 
 module.exports = nextConfig;

@@ -1177,7 +1177,7 @@ data-styled.g75[id="sc-jOxtWs"] {
     position: absolute;
     margin: auto;
     background-repeat: no-repeat;
-    background-image: url('../../public/images/logo.png');
+    background-image: url('../public/images/logo.png');
     background-size: contain;
     width: 80px;
     height: 80px;
@@ -2241,7 +2241,7 @@ data-styled.g139[id="sc-gslxeA"] {
 
 /*!sc*/
 .bGvJkT .nso-swiper.swiper .swiper-button-next:after {
-    background-image: url('../../public/images/circle-right-arrow.svg');
+    background-image: url('../public/images/circle-right-arrow.svg');
     z-index: 10000;
 }
 
@@ -2252,7 +2252,7 @@ data-styled.g139[id="sc-gslxeA"] {
 
 /*!sc*/
 .bGvJkT .nso-swiper.swiper .swiper-button-prev:after {
-    background-image: url('../../public/images/circle-right-arrow.svg');
+    background-image: url('../public/images/circle-right-arrow.svg');
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
