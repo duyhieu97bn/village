@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../Common/SectionHeader";
+import SectionHeader from "../../Common/SectionHeader";
 import BlogItem from "./BlogItem";
 import BlogData from "./blogData";
 

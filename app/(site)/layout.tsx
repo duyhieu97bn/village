@@ -2,8 +2,8 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Lines from "@/components/Lines";
-import ScrollToTop from "@/components/ScrollToTop";
+import Lines from "@/components/Old/Lines";
+import ScrollToTop from "@/components/Old/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "../globals.css";
@@ -24,9 +24,9 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="light"
         >
-          <Lines />
+          {/* <Lines /> */}
           <Header />
-          <ToasterContext />
+          {/* <ToasterContext /> */}
           {children}
           <Footer />
           <ScrollToTop />

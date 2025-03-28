@@ -1,17 +1,17 @@
 import { Metadata } from "next";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Old/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
-import FeaturesTab from "@/components/FeaturesTab";
-import FunFact from "@/components/FunFact";
-import Integration from "@/components/Integration";
-import CTA from "@/components/CTA";
+import FeaturesTab from "@/components/Old/FeaturesTab";
+import FunFact from "@/components/Old/FunFact";
+import Integration from "@/components/Old/Integration";
+import CTA from "@/components/Old/CTA";
 import FAQ from "@/components/FAQ";
-import Pricing from "@/components/Pricing";
-import Contact from "@/components/Contact";
-import Blog from "@/components/Blog";
-import Testimonial from "@/components/Testimonial";
+import Pricing from "@/components/Old/Pricing";
+import Contact from "@/components/Old/Contact";
+import Blog from "@/components/Old/Blog";
+import Testimonial from "@/components/Old/Testimonial";
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
